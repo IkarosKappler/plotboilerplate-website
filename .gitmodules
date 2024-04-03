@@ -1,0 +1,15 @@
+[submodule "hugo-theme-seven-demo"]
+	path = hugo-theme-seven-demo
+	url = https://github.com/mrhelloboy/hugo-theme-seven-demo.git
+[submodule "themes/seven"]
+	path = themes/seven
+	url = https://github.com/mrhelloboy/seven.git
+[submodule "themes/papermod"]
+	path = themes/papermod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/hulga"]
+	path = themes/hulga
+	url = https://github.com/wlh320/hugo-theme-hulga.git
+[submodule "themes/hugo-simple"]
+	path = themes/hugo-simple
+	url = https://github.com/maolonglong/hugo-simple.git

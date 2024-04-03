@@ -1,0 +1,6 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+DefaultContentLanguage = "en-us"
+title = "My New Hugo Site"
+paginate = 10
+theme = "papermod"
