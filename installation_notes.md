@@ -31,3 +31,8 @@ I picked 'seven'.
 > npm install postcss-cli
 > npm i @fullhuman/postcss-purgecss
 
+
+## Run Hugo
+> hugo server
+
+

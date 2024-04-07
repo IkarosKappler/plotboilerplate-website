@@ -1,6 +1,20 @@
 baseURL = "https://example.com"
 languageCode = "en-us"
 DefaultContentLanguage = "en-us"
-title = "My New Hugo Site"
+title = "Plotboilerplate.js"
 paginate = 10
-theme = "papermod"
+theme = "plotboilerplate"
+
+[menus]
+[[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+[[menus.main]]
+    name = 'Products'
+    pageRef = '/products'
+    weight = 20
+[[menus.main]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 30
