@@ -1,4 +1,5 @@
 /* SASS SOURCE */
+/* This will be compiled into ./assets/css/custom.css */
 #menu li a span span img,
 #menu li a span span svg {
   width: 16px;

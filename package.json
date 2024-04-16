@@ -12,7 +12,10 @@
   "version": "0.1.0",
   "main": "entry.js",
   "scripts": {
+    "build": "npm run preprocess-css | npm run hugo-build",
     "test": "test.js",
+    "hugo-server": "hugo server",
+    "hugo-build": "hugo -D",
     "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
     "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css"
   },
