@@ -5,6 +5,10 @@ title = "Plotboilerplate.js"
 paginate = 10
 theme = "papermod"
 
+[params.assets]
+    theme_color = "#00ba73"
+    msapplication_TileColor = "#00ba73"
+
 [menus]
 [[menus.main]]
     name = 'Getting started'

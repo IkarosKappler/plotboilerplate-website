@@ -1,10 +1,45 @@
 /* SASS SOURCE */
 /* This will be compiled into ./assets/css/custom.css */
+/* Set proper icon size in the main nav */
 #menu li a span span img,
 #menu li a span span svg {
   width: 16px;
   height: 16px;
   display: inline-block;
+  margin-right: 6px;
 }
+
+/* Fixed position for main nav */
+header.header {
+  position: fixed;
+  border-bottom: 6px solid #00ba73;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  /* background: var(--theme); */
+  backdrop-filter: blur(10px);
+}
+
+/* Give main content more margin for fixed header */
+main.main {
+  margin-top: 60px;
+}
+
+/* This is more or less the break point where the header breaks into two lines */
+@media screen and (max-width: 1024px) {
+  main.main {
+    margin-top: 120px;
+  }
+}
+/* Make header background opaque according to dark/light mode */
+/*
+body:not(.dark) header.header {
+    background: $background_light;
+}
+
+body.dark header.header {
+    background: $background_dark;
+}
+*/
 
 /*# sourceMappingURL=custom.css.map */
