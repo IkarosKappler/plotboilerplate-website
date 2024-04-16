@@ -36,3 +36,17 @@ I picked 'seven'.
 > hugo server
 
 
+## Install a CSS-Postprocessor (tailwindcss)
+Afer picking a theme (papermod) I noticed that the CSS files are all static.
+
+For more flexibility I need a CSS postprocessor, so I choose to try tailwindcss.
+
+> npm install -D tailwindcss
+> npx tailwindcss init
+
+
+...
+Run tailwind:
+> npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+

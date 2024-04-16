@@ -1,0 +1,11 @@
+{{- /* ### Extended Head File From Theme 'PAPERMOD' ### */ -}}
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{- /* Head custom content area end */ -}}
+
+<!-- custom css -->
+
+{{- $custom := (resources.Get "css/custom.css") }}
+{{- $custom = (slice $custom) | resources.Concat "assets/css/custom.css" | resources.Minify }}
+<link crossorigin="anonymous" href="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}" rel="preload stylesheet" as="style">

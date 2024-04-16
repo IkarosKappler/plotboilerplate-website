@@ -3,7 +3,7 @@ languageCode = "en-us"
 DefaultContentLanguage = "en-us"
 title = "Plotboilerplate.js"
 paginate = 10
-theme = "plotboilerplate"
+theme = "papermod"
 
 [menus]
 [[menus.main]]
