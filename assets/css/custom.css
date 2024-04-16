@@ -1,2 +1,9 @@
+/* SASS SOURCE */
+#menu li a span span img,
+#menu li a span span svg {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
 
-/* THIS IS A TEST */
+/*# sourceMappingURL=custom.css.map */

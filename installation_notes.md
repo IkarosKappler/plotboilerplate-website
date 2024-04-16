@@ -39,14 +39,9 @@ I picked 'seven'.
 ## Install a CSS-Postprocessor (tailwindcss)
 Afer picking a theme (papermod) I noticed that the CSS files are all static.
 
-For more flexibility I need a CSS postprocessor, so I choose to try tailwindcss.
+For more flexibility I need a CSS postprocessor, so I choose to try sass.
 
-> npm install -D tailwindcss
-> npx tailwindcss init
-
-
-...
-Run tailwind:
-> npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+> npm i sass
+> put.css --watch
 
 

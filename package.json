@@ -5,8 +5,18 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.75.0"
   },
   "name": "plotboilerplate-website",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "main": "entry.js",
+  "scripts": {
+    "test": "test.js",
+    "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
+    "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css"
+  },
+  "author": "Ikaros Kappler",
+  "license": "MIT",
+  "description": ""
 }
