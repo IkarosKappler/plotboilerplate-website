@@ -1,7 +1,7 @@
 +++
 title = 'My First Test Post'
 date = 2024-04-07T07:07:07+01:00
-draft = false
+draft = true
 layout = "post"
 menus = ["main", "footer"]
 

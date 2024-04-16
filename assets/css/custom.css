@@ -20,17 +20,17 @@ header.header {
   backdrop-filter: blur(10px);
 }
 
-/* Give main content more margin for fixed header */
+/* Give main content more padding for fixed header */
 main.main {
-  margin-top: 60px;
+  padding-top: 120px;
 }
 
 /* This is more or less the break point where the header breaks into two lines */
-@media screen and (max-width: 1024px) {
-  main.main {
-    margin-top: 120px;
-  }
-}
+/* @media screen and (max-width: 1024px) {
+    main.main {
+        padding-top: 120px;
+    }
+} */
 /* Make header background opaque according to dark/light mode */
 /*
 body:not(.dark) header.header {
