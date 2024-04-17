@@ -53,9 +53,11 @@ rm -rf "${TEMP_DIR}*"
 
 
 # So just generate HTML output and display it in an iframe (see ../docs_jekyll/_layouts/docs.html)
-# npx typedoc --options typedoc-config.json ../src/ts/*.ts ../src/ts/**/*.ts ../src/ts/**/**/*.ts
 echo -e "${_PURPLE} *** Generating raw typedoc in temp directory ${TEMP_DIR}.${_NC}"
-npx typedoc --options ../typedoc-config.json --tsconfig "$SOURCE_DIR/tsconfig.module.json" --plugin typedoc-plugin-markdown --entryDocument "_index.md" "$SOURCE_DIR"/src/ts/*.ts "$SOURCE_DIR"/src/ts/**/*.ts "$SOURCE_DIR"/src/ts/**/**/*.ts
+# npx typedoc --options typedoc-config.json ../src/ts/*.ts ../src/ts/**/*.ts ../src/ts/**/**/*.ts
+# npx typedoc --options ../typedoc-config.json --tsconfig "$SOURCE_DIR/tsconfig.module.json" --plugin typedoc-plugin-markdown --entryDocument "_index.md" "$SOURCE_DIR"/src/ts/*.ts "$SOURCE_DIR"/src/ts/**/*.ts "$SOURCE_DIR"/src/ts/**/**/*.ts
+# npx typedoc --options ../typedoc-config.json --plugin typedoc-theme-hierarchy --theme hierarchy --tsconfig "$SOURCE_DIR/tsconfig.module.json" "$SOURCE_DIR"/src/ts/*.ts "$SOURCE_DIR"/src/ts/**/*.ts "$SOURCE_DIR"/src/ts/**/**/*.ts
+npx typedoc --options ../typedoc-config.json --plugin @mxssfd/typedoc-theme --theme my-theme --tsconfig "$SOURCE_DIR/tsconfig.module.json" -out "$TEMP_DIR" "$SOURCE_DIR"/src/ts/*.ts "$SOURCE_DIR"/src/ts/**/*.ts "$SOURCE_DIR"/src/ts/**/**/*.ts
 
 echo -e "${_GREY} Cleaning up target directory $DEST_DIR.${_NC}"
 rm -rf "${DEST_DIR}*"
@@ -75,16 +77,17 @@ function addMarkdownHeader() {
 			elif [ -f "$file" ]; then
 				baseName=$(basename $file);
 				outFile="$DEST_DIR/$baseName"
-				echo -e "${_GREEN} *** Handing file $file and printing to $outfile ...${_NC}"
+				curDate=$(date +"%Y-%m-%d")
+				echo -e "${_GREEN} *** Handing file $file and printing to $outFile ...${_NC}"
 				# +++
 				# title = 'Download | Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
 				# date = 2024-04-17T00:06:07+01:00
 				# draft = false
 				# +++
 				echo '+++' > "$outFile"
-				echo 'title = "Plotboilerplate Docs"' >> "$outfile"
+				echo 'title = "Plotboilerplate Docs"' >> "$outFile"
 				echo 'layout = "docs"' >> "$outFile"
-				date 'date = "%Y-%m-%d"' >> "$outFile"
+				echo "date = \"$curDate\"" >> "$outFile"
 				echo '+++' >> "$outFile"
 				echo '' >> "$outFile"
 				cat "$file" >> "$outFile"
@@ -95,4 +98,4 @@ function addMarkdownHeader() {
 		echo "Warning: file $d is not a directory! Skipping"
     fi
 }
-addMarkdownHeader "$TEMP_DIR" 
+# addMarkdownHeader "$TEMP_DIR" 

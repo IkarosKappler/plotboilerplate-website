@@ -57,3 +57,10 @@ For more flexibility I need a CSS postprocessor, so I choose to try sass.
 npm run mk-typedocs
 ```
 After this run Hugo again.
+
+
+# Using a nice theme for the Typedoc documents
+> npm install typedoc-material-theme
+> npm i typedoc-theme-hierarchy
+> npm install @mxssfd/typedoc-theme
+
