@@ -51,3 +51,9 @@ For more flexibility I need a CSS postprocessor, so I choose to try sass.
 > put.css --watch
 
 
+
+## Generate typedocs
+```
+npm run mk-typedocs
+```
+After this run Hugo again.
