@@ -6,7 +6,9 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "postcss-cli": "^11.0.0",
-    "sass": "^1.75.0"
+    "sass": "^1.75.0",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-markdown": "^3.17.1"
   },
   "name": "plotboilerplate-website",
   "version": "0.1.0",
@@ -16,6 +18,7 @@
     "test": "test.js",
     "hugo-server": "hugo server",
     "hugo-build": "hugo -D",
+    "mk-typedocs": "cd bin && ./run-mk-typedocs.sh",
     "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
     "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css"
   },

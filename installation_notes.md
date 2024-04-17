@@ -1,5 +1,11 @@
 # Steps that led to this website project
 
+Hugo version:
+```
+hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec linux/amd64 BuildDate=2024-03-20T11:40:10Z VendorInfo=gohugoio
+```
+
+
 ## I'm using Hugo static site builder
 > sudo apt-get install hugo
 
