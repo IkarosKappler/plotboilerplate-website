@@ -22,6 +22,7 @@
     "hugo-server": "hugo server",
     "hugo-build": "hugo -D",
     "mk-typedocs": "cd bin && ./run-mk-typedocs.sh",
+    "mk-demopage": "cd bin && ./run-generate-demo-page.sh",
     "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
     "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css"
   },

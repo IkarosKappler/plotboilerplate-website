@@ -9,12 +9,8 @@
 # @author Ikaros Kappler
 
 
-# Define some colors
-_RED='\033[0;31m'
-_GREEN='\033[0;32m'
-_PURPLE='\033[0;35m'
-_GREY="\033[0;37m"
-_NC='\033[0m'
+# Import colors
+source "`dirname $0`"/colors.sh
  
 # Trailing slashes will be ensured later again.
 # Use the root directory from your plotboilerplate installation.
@@ -49,7 +45,7 @@ fi
 
 
 echo -e "${_GREY} Cleaning up temp directory $TEMP_DIR.${_NC}"
-rm -rf "${TEMP_DIR}*"
+rm -rf "${TEMP_DIR}"*
 
 
 # So just generate HTML output and display it in an iframe (see ../docs_jekyll/_layouts/docs.html)

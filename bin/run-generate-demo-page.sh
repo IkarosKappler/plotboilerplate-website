@@ -70,14 +70,14 @@ function mkDemoPage() {
 
 	echo '' > $basicOutFile    
 	echo '<h3>Basics</h3>' >> $basicOutFile
-	echo '<div class="full-width basic-demos">' >> $basicOutFile
+	echo '<div class="full-width align-center">' >> $basicOutFile
 
 	# echo "   {% include $basicOutFileName %}" >> $basicOutFile
 	# echo "   {{ partial \"$basicOutFileName\" . }}" >> $basicOutFile
 	# echo '</div>' > $basicOutFile
 
 	echo '<h3>Enhanced</h3>' > $demosOutFile
-    echo '<div class="full-width">' >> $demosOutFile
+    echo '<div class="full-width align-center">' >> $demosOutFile
     for d in "$demoDir"*; do
 		if [ -d "$d" ]; then
 			if [ ! -f "$d/index.html" ]; then
@@ -126,7 +126,8 @@ function mkDemoPage() {
     # echo 'layout = "demos"' >> $outFile
     # echo 'permalink = "/demos/"' >> $outFile
 	# 2024-04-17T00:06:07+01:00
-	date=`date +"%Y-%m-%dT%H:%M:%S+01:00"` 
+	# Warning: Hugo ignores files if date is considered in the future
+	date=`date +"%Y-%m-%dT%H:%M:%S+01:00" -d "yesterday"` 
     echo "title = 'PlotBoilerplate | Demos'" >> $outFile
     echo 'draft = false' >> $outFile
     # date +'date = %Y-%m-%d' >> $outFile
@@ -138,10 +139,27 @@ function mkDemoPage() {
 	echo '{{< rawhtml >}}' >> $outFile
 	echo "<b>TEST 3 $date</b>" >> $outFile
 
-	# cat "$basicOutFile" >> $outFile
-	# cat "$demosOutFile" >> $outFile
+	cat "$basicOutFile" >> $outFile
+	cat "$demosOutFile" >> $outFile
 	echo '{{< /rawhtml >}}' >> $outFile
 
 }
 
 mkDemoPage
+
+# This has created two partials:
+# temp/basic-demos.html
+# and
+# demos.html
+
+# +++
+# title = 'Examples | Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
+# date = 2024-04-16T23:55:07+01:00
+# draft = false
+# +++
+# 
+# # Examples
+# ...
+# {{< rawhtml >}}
+# <b>TEST 3 2024-06-17T20:11:48+01:00</b>
+# {{< /rawhtml >}}

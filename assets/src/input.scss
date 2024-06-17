@@ -49,3 +49,69 @@ body.dark header.header {
 }
 */
 
+a.no-decoration {
+    text-decoration: none;
+}
+
+.demo-box-basic {
+    width: 15%;
+    margin: 0;
+    padding-top: 15%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.demo-box {
+    width: 31%;
+    margin: 0;
+    padding-top: 31%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .demo-box-basic {
+        width: 31%;
+        padding-top: 31%;
+    }
+    .demo-box {
+        width: 45%;
+        padding-top: 45%;
+    }
+} 
+
+@media screen and (max-width: 400px) {
+    .demo-box-basic {
+        width: 45%;
+        padding-top: 45%;
+    }
+    .demo-box {
+        width: 95%;
+        padding-top: 95%;
+    }
+} 
+
+.demo-box div:hover, 
+.demo-box div:active, 
+.demo-box-basic div:hover, 
+.demo-box-basic div:active {
+    transform: scale(1.1);
+}
+
+.demo-box div, .demo-box-basic div {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+    transition: transform 0.25s;
+}
+
+.align-center {
+    text-align: center;
+}
