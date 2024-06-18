@@ -17,7 +17,7 @@
   "version": "0.1.0",
   "main": "entry.js",
   "scripts": {
-    "build": "npm run preprocess-css && npm run copy-demo-files && npm run optimize-screenshots && npm run hugo-build",
+    "build": "npm run preprocess-css && npm run copy-demo-files && npm run optimize-screenshots && npm run mk-typedocs && npm run hugo-build",
     "test": "test.js",
     "hugo-server": "hugo server",
     "hugo-build": "hugo -D",
@@ -27,7 +27,8 @@
     "mk-demopage": "cd bin && ./run-generate-demo-page.sh",
     "mk-readme-to-startpage": "cd bin && ./mk-readme-to-startpage.sh",
     "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
-    "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css"
+    "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css",
+    "start-python-server": "python3 -m http.server 8000"
   },
   "author": "Ikaros Kappler",
   "license": "MIT",

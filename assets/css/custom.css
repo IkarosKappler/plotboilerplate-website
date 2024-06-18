@@ -6,7 +6,8 @@
   width: 16px;
   height: 16px;
   display: inline-block;
-  margin-right: 6px; }
+  margin-right: 6px;
+}
 
 /* Fixed position for main nav */
 header.header {
@@ -16,7 +17,8 @@ header.header {
   top: 0;
   z-index: 9999;
   /* background: var(--theme); */
-  backdrop-filter: blur(10px); }
+  backdrop-filter: blur(10px);
+}
 
 /* Give main content more padding for fixed header */
 /* main.main {
@@ -26,18 +28,27 @@ div.site-headerdemo {
   height: 50vh;
   width: 100vw;
   position: relative;
-  padding-top: 120px; }
-  div.site-headerdemo div.site-canvas-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px; }
+  padding-top: 120px;
+}
+div.site-headerdemo div.site-canvas-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+}
+
+iframe.docs {
+  width: 100%;
+  height: 100vh;
+}
 
 div.heade-spacer-no-canvas {
-  padding-top: 120px; }
+  padding-top: 120px;
+}
 
 a.no-decoration {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .demo-box-basic {
   width: 15%;
@@ -45,7 +56,8 @@ a.no-decoration {
   padding-top: 15%;
   position: relative;
   display: inline-block;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .demo-box {
   width: 31%;
@@ -53,29 +65,35 @@ a.no-decoration {
   padding-top: 31%;
   position: relative;
   display: inline-block;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 @media screen and (max-width: 600px) {
   .demo-box-basic {
     width: 31%;
-    padding-top: 31%; }
-
+    padding-top: 31%;
+  }
   .demo-box {
     width: 45%;
-    padding-top: 45%; } }
+    padding-top: 45%;
+  }
+}
 @media screen and (max-width: 400px) {
   .demo-box-basic {
     width: 45%;
-    padding-top: 45%; }
-
+    padding-top: 45%;
+  }
   .demo-box {
     width: 95%;
-    padding-top: 95%; } }
+    padding-top: 95%;
+  }
+}
 .demo-box div:hover,
 .demo-box div:active,
 .demo-box-basic div:hover,
 .demo-box-basic div:active {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+}
 
 .demo-box div, .demo-box-basic div {
   width: 100%;
@@ -86,9 +104,11 @@ a.no-decoration {
   background-repeat: no-repeat;
   background-position: center;
   transform-origin: center center;
-  transition: transform 0.25s; }
+  transition: transform 0.25s;
+}
 
 .align-center {
-  text-align: center; }
+  text-align: center;
+}
 
 /*# sourceMappingURL=custom.css.map */

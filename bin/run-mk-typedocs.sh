@@ -17,7 +17,7 @@ source "`dirname $0`"/colors.sh
 # SOURCE_DIR="../node_modules/plotboilerplate/"
 SOURCE_DIR="../../plotboilerplate/"
 DEST_DIR="../content/docs/"
-TEMP_DIR="../temp/"
+TEMP_DIR="../static/docs/"
 
 source "$(dirname "$0")/function-ensureTrailingSlash.sh"
 
