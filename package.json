@@ -17,10 +17,12 @@
   "version": "0.1.0",
   "main": "entry.js",
   "scripts": {
-    "build": "npm run preprocess-css | npm run hugo-build",
+    "build": "npm run preprocess-css && npm run copy-demo-files && npm run optimize-screenshots && npm run hugo-build",
     "test": "test.js",
     "hugo-server": "hugo server",
     "hugo-build": "hugo -D",
+    "copy-demo-files": "cd bin && ./run-copy-demo-files.sh",
+    "optimize-screenshots": "cd bin && ./run-optimize-screenshots.sh",
     "mk-typedocs": "cd bin && ./run-mk-typedocs.sh",
     "mk-demopage": "cd bin && ./run-generate-demo-page.sh",
     "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
@@ -28,5 +30,5 @@
   },
   "author": "Ikaros Kappler",
   "license": "MIT",
-  "description": ""
+  "description": "This is the website for my `plotboilerplate` project."
 }

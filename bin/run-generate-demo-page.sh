@@ -137,7 +137,7 @@ function mkDemoPage() {
 
 	# Finally concatenate both temp files into the final file
 	echo '{{< rawhtml >}}' >> $outFile
-	echo "<b>TEST 3 $date</b>" >> $outFile
+	# echo "<b>TEST 3 $date</b>" >> $outFile
 
 	cat "$basicOutFile" >> $outFile
 	cat "$demosOutFile" >> $outFile

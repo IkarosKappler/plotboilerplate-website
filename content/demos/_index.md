@@ -1,11 +1,10 @@
 +++
 title = 'PlotBoilerplate | Demos'
 draft = false
-date = 2024-06-16T22:47:09+01:00
+date = 2024-06-17T21:09:50+01:00
 +++
 
 {{< rawhtml >}}
-<b>TEST 3 2024-06-16T22:47:09+01:00</b>
 
 <h3>Basics</h3>
 <div class="full-width align-center">
