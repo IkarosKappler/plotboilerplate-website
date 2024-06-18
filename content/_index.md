@@ -1,9 +1,13 @@
 +++
 title = 'Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
-date = 2024-01-14T07:07:07+01:00
 draft = false
+date = 2024-06-17T22:49:49+01:00
+hasHeaderCanvas = true
 +++
 
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+![Release](https://img.shields.io/github/v/release/ikaroskappler/plotboilerplate)
+![NPM](https://img.shields.io/npm/v/plotboilerplate)
 
 # An interactive Javascript Plotting Boilerplate
 
