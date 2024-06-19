@@ -7,6 +7,8 @@ theme = "papermod"
 
 [params]
 	label.icon = "https://plotboilerplate.io/repo/logo-128.png"
+    author = "Ikaros Kappler"
+    description = "A lightweight html5/javascript/canvas plotting boilerplate library: plotboilerplate.js."
 
 [params.assets]
     theme_color = "#00ba73"
