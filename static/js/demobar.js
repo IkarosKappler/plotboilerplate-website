@@ -1,7 +1,13 @@
 window.addEventListener("load", function () {
+
+  var themeMode = localStorage.getItem("pref-theme");
+  console.log("themeMode", themeMode);
+
+
   // All config params are optional.
   var pb = new PlotBoilerplate({
     canvas: document.getElementById("my-canvas"),
+    backgroundColor : themeMode === 'dark' ? '#000000' : '#ffffff',
     fullSize: true,
     fitToParent: true,
     redrawOnResize: true,
@@ -73,4 +79,31 @@ window.addEventListener("load", function () {
   for (var i = 0; i < 7; i++) {
     newPerp(line);
   }
+
+  // Install listener for theme toggle
+  document.getElementById("theme-toggle").addEventListener("click", function() {
+    // if (document.body.className.includes("dark")) {
+    //     document.body.classList.remove('dark');
+    //     localStorage.setItem("pref-theme", 'light');
+    // } else {
+    //     document.body.classList.add('dark');
+    //     localStorage.setItem("pref-theme", 'dark');
+    // }
+    // localStorage.setItem("pref-theme", 'light');
+    var themeMode = localStorage.getItem("pref-theme");
+    console.log("themeMode", themeMode);
+    pb.config.backgroundColor = themeMode === 'dark' ? '#000000' : '#ffffff';
+    pb.redraw();
+ 
+  });
+
+  window.addEventListener("storage", () => {
+    // When local storage changes, dump the list to
+    // the console.
+    // console.log(JSON.parse(window.localStorage.getItem("sampleList")));
+    var themeMode = localStorage.getItem("pref-theme");
+    console.log("themeMode", themeMode);
+    pb.config.backgroundColor = themeMode === 'dark' ? '#000000' : '#ffffff';
+    pb.redraw();
+  });
 });
