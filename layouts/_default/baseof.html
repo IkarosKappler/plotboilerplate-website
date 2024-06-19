@@ -9,11 +9,6 @@
     {{- partial "head.html" . }}
 </head>
 
-{{ if eq .Params.hasHeaderCanvas true }}
-    {{- partial "interactive_canvas.html" . }}
-{{ else }}
-    <div class="heade-spacer-no-canvas"></div>
-{{ end }}
 
 <body class="
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
@@ -23,11 +18,41 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
+
+    {{ if eq .Params.hasHeaderCanvas true }}
+        {{- partial "interactive_canvas.html" . }}
+    {{ else }}
+        <div class="heade-spacer-no-canvas"></div>
+    {{ end }}
+
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-</body>
 
+<!-- Matomo --> 
+<script type="text/javascript"> 
+    window.addEventListener("load", function() {
+        var _paq = window._paq || []; 
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ 
+        _paq.push(["setCookieDomain", "*.plotboilerplate.io"]); _paq.push(['trackPageView']); 
+        _paq.push(['enableLinkTracking']); (function() {
+                var u="//stats.func.name/"; 
+                _paq.push(['setTrackerUrl', u+'matomo.php']); 
+                _paq.push(['setSiteId', '4']); 
+                var d=document, 
+                g=d.createElement('script'), 
+                s=d.getElementsByTagName('script')[0]; 
+                g.type='text/javascript'; 
+                g.async=true; 
+                g.defer=true; 
+                g.src=u+'matomo.js'; 
+                s.parentNode.insertBefore(g,s); })(); 
+        } );
+</script> 
+<noscript><p><img src="//stats.func.name/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript> 
+<!-- End Matomo Code -->
+
+</body>
 </html>

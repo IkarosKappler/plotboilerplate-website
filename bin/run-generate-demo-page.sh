@@ -26,7 +26,6 @@ echo -e "${_PURPLE} *** Creating temp directory '$TEMP_DIR'${_NC}"
  
 # Trailing slashes will be ensured later again.
 # Use the root directory from your plotboilerplate installation.
-# SOURCE_DIR="../node_modules/plotboilerplate/"
 SOURCE_DIR="../../plotboilerplate/"
 DEST_DIR="../content/demos/"
 TEMP_DIR="../temp/"
@@ -148,19 +147,4 @@ function mkDemoPage() {
 
 mkDemoPage
 
-# This has created two partials:
-# temp/basic-demos.html
-# and
-# demos.html
 
-# +++
-# title = 'Examples | Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
-# date = 2024-04-16T23:55:07+01:00
-# draft = false
-# +++
-# 
-# # Examples
-# ...
-# {{< rawhtml >}}
-# <b>TEST 3 2024-06-17T20:11:48+01:00</b>
-# {{< /rawhtml >}}

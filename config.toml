@@ -5,6 +5,9 @@ title = "Plotboilerplate.js"
 paginate = 10
 theme = "papermod"
 
+[params]
+	label.icon = "https://plotboilerplate.io/repo/logo-128.png"
+
 [params.assets]
     theme_color = "#00ba73"
     msapplication_TileColor = "#00ba73"
@@ -21,7 +24,7 @@ theme = "papermod"
     weight = 20
 [[menus.main]]
     name = 'Applications'
-    pre = '<span class="icon icon--github"><img src="/img/icon-applications-512x512.png"></span>'
+    pre = '<span class="icon icon--github"><img alt="Applications" src="/img/icon-applications-512x512.png"></span>'
     pageRef = '/applications'
     weight = 30
 [[menus.main]]
