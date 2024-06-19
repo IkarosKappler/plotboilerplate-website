@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://plotboilerplate.io"
 languageCode = "en-us"
 DefaultContentLanguage = "en-us"
 title = "Plotboilerplate.js"

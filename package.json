@@ -26,6 +26,7 @@
     "mk-typedocs": "cd bin && ./run-mk-typedocs.sh",
     "mk-demopage": "cd bin && ./run-generate-demo-page.sh",
     "mk-readme-to-startpage": "cd bin && ./mk-readme-to-startpage.sh",
+    "publish-website": "cd bin && ./publish-website.sh",
     "preprocess-css": "sass ./assets/src/input.scss ./assets/css/custom.css",
     "preprocess-css-watch": "sass --watch ./assets/src/input.scss ./assets/css/custom.css",
     "start-python-server": "python3 -m http.server 8000"
