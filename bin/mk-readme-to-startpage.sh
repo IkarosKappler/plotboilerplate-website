@@ -11,6 +11,11 @@ echo 'draft = false' >> $DEST_FILE
 # date +'date = %Y-%m-%d' >> $outFile
 echo "date = $date" >> $DEST_FILE
 echo "hasHeaderCanvas = true" >> $DEST_FILE
+echo 'cover.image = "https://plotboilerplate.io/repo/logo-128.png"' >> $DEST_FILE
+echo 'cover.alt = "Alt / My First Test Post"' >> $DEST_FILE
+echo 'cover.caption = "This is the captions for my first test post."' >> $DEST_FILE
+echo 'cover.relative = false' >> $DEST_FILE
+# To use relative path for cover image, used in hugo Page-bundles
 echo '+++' >> $DEST_FILE
 echo '' >> $DEST_FILE
 

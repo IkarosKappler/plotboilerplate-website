@@ -4,6 +4,8 @@ DefaultContentLanguage = "en-us"
 title = "Plotboilerplate.js"
 paginate = 10
 theme = "papermod"
+# copyright = "&copy; 2010 - {{ .Now.Year }} My Name"
+
 
 [params]
 	label.icon = "https://plotboilerplate.io/repo/logo-128.png"
@@ -13,6 +15,7 @@ theme = "papermod"
 [params.assets]
     theme_color = "#00ba73"
     msapplication_TileColor = "#00ba73"
+
 
 [menus]
 [[menus.main]]

@@ -1,9 +1,16 @@
 +++
 title = 'Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
 draft = false
-date = 2024-06-17T22:49:49+01:00
 hasHeaderCanvas = true
+date = 2024-06-17T22:00:22+01:00
+cover.image = "https://plotboilerplate.io/repo/logo-128.png"
+cover.alt = "Alt / My First Test Post"
+cover.caption = "This is the captions for my first test post."
+cover.relative = false 
+# To use relative path for cover image, used in hugo Page-bundles
 +++
+
+
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 ![Release](https://img.shields.io/github/v/release/ikaroskappler/plotboilerplate)
