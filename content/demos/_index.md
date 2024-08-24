@@ -1,7 +1,7 @@
 +++
 title = 'PlotBoilerplate | Demos'
 draft = false
-date = 2024-06-17T21:30:11+01:00
+date = 2024-08-23T16:46:49+01:00
 +++
 
 {{< rawhtml >}}
@@ -340,6 +340,11 @@ date = 2024-06-17T21:30:11+01:00
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/53-circle-sector-intersections/index.html">
          <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20240309-0-circle-sector-intersections.png');"></div>
+      </a>
+   </div>
+   <div class="demo-box">
+      <a class="no-decoration" href="/repo/demos/54-aftereffects-test/index.html">
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20240723-after-effects-filter-2.png');"></div>
       </a>
    </div>
    <div class="demo-box">

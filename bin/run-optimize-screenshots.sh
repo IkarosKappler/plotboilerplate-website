@@ -21,6 +21,7 @@ _NC='\033[0m'
 # Trailing slashes will be ensured later again.
 SOURCE_DIR="../../plotboilerplate/screenshots/screenshots-fullcolor/"
 DEST_DIR="../static/img/screenshots/"
+DEST_DIR2="../static/repo/screenshots/"
 
 if [ $# -eq 0 ]
   then
@@ -45,21 +46,27 @@ source "$(dirname "$0")/function-ensureTrailingSlash.sh"
 echo " source_directory=$SOURCE_DIR"
  
 # Iterate through all large start-JPG files.
-for file in "$SOURCE_DIR"*.{png,PNG}; do
+# for file in "$SOURCE_DIR"*.{png,PNG}; do
 
-    echo "FILE: $file"
-    filename=$(basename "$file")
+#     echo "FILE: $file"
+#     filename=$(basename "$file")
     
-    # Process only regular files
-    if [ -f "$file" ]; then
+#     # Process only regular files
+#     if [ -f "$file" ]; then
 	
-        echo -e "   ${_PURPLE}Generating optimized screensot for file ${filename} ${_NC}"
-        # convert "$file" -resize 128 -define jpeg:extent=10kb "./$dirname_thumbs/$filename"
-        # convert -colors 32 "../screenshots/screenshots-fullcolor/$filename" "../screenshots/$filename"
-        convert -colors 32 "${SOURCE_DIR}$filename" "${DEST_DIR}$filename"
+#         echo -e "   ${_PURPLE}Generating optimized screensot for file ${filename} ${_NC}"
+#         # convert "$file" -resize 128 -define jpeg:extent=10kb "./$dirname_thumbs/$filename"
+#         # convert -colors 32 "../screenshots/screenshots-fullcolor/$filename" "../screenshots/$filename"
+#         convert -colors 32 "${SOURCE_DIR}$filename" "${DEST_DIR}$filename"
         
-        echo -e "   ${_GREEN}Done.${_NC}"
+#         echo -e "   ${_GREEN}Done.${_NC}"
 
-    fi
+#     fi
 	
-done
+# done
+
+# Finally copy to publis repo dir
+mkdir -p "${DEST_DIR2}" 
+cp "${DEST_DIR}/"*.png "${DEST_DIR2}/"
+
+echo "Copied."

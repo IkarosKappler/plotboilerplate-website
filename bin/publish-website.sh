@@ -14,7 +14,7 @@ fi
 while true; do
     read -p "Do you wish compile the hugo pages before uploading (y/n)? " yn
     case $yn in
-        [Yy]* ) cd ../ && npm run bild && cd ../bin; break;;
+        [Yy]* ) cd ../ && npm run build && cd bin; break;;
         [Nn]* ) break;; #exit;;
         * ) echo "Please answer y or n.";;
     esac
@@ -27,6 +27,7 @@ echo "Uploading to $server ..."
 # rsync -avH ../docs_jekyll/_site/*  -e ssh user@server:/your/destination/path
 # rsync -avH ../docs_jekyll/_site/*  -e ssh $user@$server:"$destination"
 # rsync -avH ../demos_with_tracker/* -e ssh $user@$server:"$destination/repo/demos/"
+# rsync -avH ../demos_with_tracker/* -e ssh $user@$server:"$destination/repo/demos/"
 # rsync -avH ../dist                 -e ssh $user@$server:"$destination/repo/"
 # rsync -avH ../lib                  -e ssh $user@$server:"$destination/repo/"
 # rsync -avH ../screenshots          -e ssh $user@$server:"$destination/repo/"
@@ -34,7 +35,9 @@ echo "Uploading to $server ..."
 # rsync -avH ../tests                -e ssh $user@$server:"$destination/repo/"
 # rsync -avH ../*.*                  -e ssh $user@$server:"$destination/repo/"
 # rsync -avH ../releases/*           -e ssh $user@$server:"$destination/releases/"
+# rsync -avH ../repo/screenshots/*           -e ssh $user@$server:"$destination/repo/screenshots/"
 
+echo "Current working directory $(pwd)"
 echo "destination $destination"
 rsync -avH ../public/*  -e ssh $user@$server:"$destination"
 
