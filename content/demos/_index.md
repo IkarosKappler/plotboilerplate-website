@@ -1,7 +1,7 @@
 +++
 title = 'PlotBoilerplate | Demos'
 draft = false
-date = 2024-08-23T16:46:49+01:00
+date = 2025-03-16T23:13:41+01:00
 +++
 
 {{< rawhtml >}}
@@ -345,6 +345,21 @@ date = 2024-08-23T16:46:49+01:00
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/54-aftereffects-test/index.html">
          <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20240723-after-effects-filter-2.png');"></div>
+      </a>
+   </div>
+   <div class="demo-box">
+      <a class="no-decoration" href="/repo/demos/55-infinite-irregular-pattern/index.html">
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20250317-infitite-irregular-pattern-0.png');"></div>
+      </a>
+   </div>
+   <div class="demo-box">
+      <a class="no-decoration" href="/repo/demos/56-scale-down-polygon-inset/index.html">
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20241030-polygon-inset-0.png');"></div>
+      </a>
+   </div>
+   <div class="demo-box">
+      <a class="no-decoration" href="/repo/demos/57-eliminate-colinear-polygon-edges/index.html">
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20241202-eliminate-colinear-polygon-vertices.png');"></div>
       </a>
    </div>
    <div class="demo-box">
