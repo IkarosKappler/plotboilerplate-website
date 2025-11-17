@@ -41,3 +41,6 @@ echo "Current working directory $(pwd)"
 echo "destination $destination"
 rsync -avH ../public/*  -e ssh $user@$server:"$destination"
 
+rsync -avH ../releases/*           -e ssh $user@$server:"$destination/releases/"
+rsync -avH ../repo/screenshots/*           -e ssh $user@$server:"$destination/repo/screenshots/"
+

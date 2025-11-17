@@ -1,7 +1,7 @@
 +++
 title = 'Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
 draft = false
-date = 2025-11-16T21:01:18+01:00
+date = 2025-11-16T22:57:18+01:00
 hasHeaderCanvas = true
 cover.image = "https://plotboilerplate.io/repo/logo-128.png"
 cover.alt = "Alt / My First Test Post"

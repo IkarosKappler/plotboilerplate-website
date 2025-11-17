@@ -23,6 +23,15 @@ SOURCE_DIR="../../plotboilerplate/screenshots/screenshots-fullcolor/"
 DEST_DIR="../static/img/screenshots/"
 DEST_DIR2="../static/repo/screenshots/"
 
+while true; do
+    read -p "Do you wish optimize all screenshots (y/n)? " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer y or n.";;
+    esac
+done
+
 if [ $# -eq 0 ]
   then
     echo "[optimizeScreenshots] No arguments given. Using default directories (input=$SOURCE_DIR, output=$DEST_DIR)"

@@ -1,7 +1,7 @@
 +++
 title = 'PlotBoilerplate | Demos'
 draft = false
-date = 2025-11-16T21:01:20+01:00
+date = 2025-11-16T22:57:21+01:00
 +++
 
 {{< rawhtml >}}
@@ -224,12 +224,12 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/30-function-plot/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20210203-0-function-plot-test.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/31-path-draw/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20210219-0-path-data-transformation.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -239,22 +239,22 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/33-depth-mesh/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20210414-0-rhombicdodecahedron.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/34-polynomial-interpolation/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20210531-polynom-interpolation.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/35-curvature-of-cubic-bezier/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20210531-0-curvature-of-cubic-bezier-curve.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/36-lightning-algorithm/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20211006-4-lightning-algorithm.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -309,7 +309,7 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/47-closest-vector-projection-on-polygon/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20230926-0-polygon-line-intersections.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -319,7 +319,7 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/49-polygon-inside-polygon/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20231124-0-polygon-inside-polygon-check.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -329,7 +329,7 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/51-polygons-with-rounded-edges/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20240206-0-polygons-with-round-edges.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -339,17 +339,17 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/53-circle-sector-intersections/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20240309-0-circle-sector-intersections.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/54-aftereffects-test/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20240723-after-effects-filter-2.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/55-infinite-irregular-pattern/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20250317-infitite-irregular-pattern-0.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -359,12 +359,12 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/57-eliminate-colinear-polygon-edges/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20241202-eliminate-colinear-polygon-vertices.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/58-shape-reflecting-rays/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20250427-0-shape-reflecting-rays.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -374,57 +374,57 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/60-elliptic-sector-angle-containment/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20250407-0-angle-contained-in-elliptic-sector.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/61-shape-bounding-boxes/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20250423-0-shape-bounding-boxes.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/62-measure-angles-on-polygon/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20250607-itersection-angles-of-polygon-0.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/63-simple-ring-animation/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20251018-ring-animation.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/64-multiple-ring-animation/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20251029-0-multiple-ring-animation.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/65-rounded-squares/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20251017-1-rounded-square-paths.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/66-simple-perlin-noise/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20251117-0-2d-perlin-noise.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/67-perlin-noise-3d-depth-mesh/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20251117-0-perlin-depth-mesh.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/extended-arrows/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20230929-0-extented-arrow-demo.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/extended-bezier-trim/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20231007-0-trim-bezier-curves.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/extended-circle-line-intersection/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20220910-extended-circle-line-intersection.png');"></div>
       </a>
    </div>
    <div class="demo-box">
@@ -434,12 +434,12 @@ date = 2025-11-16T21:01:20+01:00
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/extended-elliptic-conversion/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20230103-0-extended-elliptic-conversion.png');"></div>
       </a>
    </div>
    <div class="demo-box">
       <a class="no-decoration" href="/repo/demos/extended-svg-path-import/index.html">
-         <div style="background-image: url('');"></div>
+         <div style="background-image: url('https://plotboilerplate.io/repo/screenshots/screenshot-20230103-svg-path-import-logo.png');"></div>
       </a>
    </div>
    <div class="demo-box">

@@ -84,14 +84,21 @@ function mkDemoPage() {
 			else
 				echo "Processing file $d/index.html ..."
 
-				imgSrc=$(cat "$d/index.html" | sed -rn "/<meta .*property=.og:image./ s/.*content=.([^\"]+).*/\1/p")
+				# /^\t#/N;
+				# imgSrc=$(cat "$d/index.html" | sed -rn "/<meta .*property=.og:image./ s/.*content=.([^\"]+).*/\1/p")
+				# imgSrc=$(cat "$d/index.html" | sed -rn "/<meta (\s.)*property=.og:image.(\s.)*/ s/.*content=.([^\"]+).*/\1/p")
+				# imgSrc=$(cat "$d/index.html" | sed -rn "/^\t#/N;/<meta (\s\n\t)*property=.og:image./ s/(\s\b\t)*content=.([^\"]+).*/\2/p")
+				# imgSrc_raw=$(cat "$d/index.html" | sed -rn "/<meta (\s\n\t)*property=.og:image./ s/(\s\b\t)*content=.([^\"]+).*/\2/p")
+				# imgSrc=$(echo "$imgSrc_raw" | sed -rn "/<meta .*property=.og:image./ s/.*content=.([^\"]+).*/\1/p")
+				imgSrc=$(cat "$d/index.html" | grep -Eo "(content=\"http|https)://plotboilerplate.io/repo/screenshots/[a-zA-Z0-9./?=_%:-]*" | sort -u)
 				descr=$(cat "$d/index.html" | sed -rn "/<meta .*property=.og:description./ s/.*content=.([^\"]+).*/\1/p")
 				title=$(cat "$d/index.html" | sed -rn "/<meta .*property=.og:title./ s/.*content=.([^\"]+).*/\1/p")
 				htmlTitle=$(cat "$d/index.html" | sed -n 's/<title>\(.*\)<\/title>/\1/Ip')
-				echo "    Source:    $imgSrc"
-				echo "    Descr:     $descr"
-				echo "    title:     $title"
-				echo "    htmlTitle: $htmlTitle"
+				# echo "    Source (raw): $imgSrc_raw"
+				echo "    Source:       $imgSrc"
+				echo "    Descr:        $descr"
+				echo "    title:        $title"
+				echo "    htmlTitle:    $htmlTitle"
 
 				baseName=$(basename $d);
 				echo "baseName=$baseName"
