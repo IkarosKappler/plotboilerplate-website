@@ -17,7 +17,7 @@
   "version": "0.1.0",
   "main": "entry.js",
   "scripts": {
-    "build": "npm run preprocess-css && npm run copy-demo-files && npm run mk-demopage && npm run optimize-screenshots && npm run mk-typedocs && npm run hugo-build",
+    "build": "npm run preprocess-css && npm run mk-readme-to-startpage && npm run copy-demo-files && npm run mk-demopage && npm run optimize-screenshots && npm run mk-typedocs && npm run hugo-build",
     "test": "test.js",
     "hugo-server": "hugo server --environment=production",
     "hugo-build": "hugo -D --environment=production",

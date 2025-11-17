@@ -1,16 +1,13 @@
 +++
 title = 'Plotboilerplage.js – Plot 2D stuff on SVG or Canvas.'
 draft = false
+date = 2025-11-16T21:01:18+01:00
 hasHeaderCanvas = true
-date = 2024-06-17T22:00:22+01:00
 cover.image = "https://plotboilerplate.io/repo/logo-128.png"
 cover.alt = "Alt / My First Test Post"
 cover.caption = "This is the captions for my first test post."
-cover.relative = false 
-# To use relative path for cover image, used in hugo Page-bundles
+cover.relative = false
 +++
-
-
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 ![Release](https://img.shields.io/github/v/release/ikaroskappler/plotboilerplate)
@@ -72,7 +69,9 @@ often use for the visualization of 2D geometries. Basic features are
   - drag and select elements
 - keyboard interaction customizable
 
-The compressed library has 135kb.
+The compressed library has 159kb.
+It once has been my aim to keep the base library less than 80kb – but the more powerful the lib gets
+the more difficult this turned out.
 
 ## Install the package via npm
 
@@ -318,7 +317,7 @@ var pb = new PlotBoilerplate({
 
   // string
   //   A background color (CSS string) for the canvas.
-  backgroundColor: "#ffffff",
+  backgroundColor: isDarkmode ? "#000000" : "#ffffff",
 
   // boolean
   //   Switch auto-redrawing on resize on/off (some applications
@@ -354,6 +353,14 @@ var pb = new PlotBoilerplate({
   //   drawing process finished.
   postDraw: function (draw, fill) {
     console.log("after drawing.");
+  },
+
+  // function
+  //   A callback function that will be triggered after content changed.
+  onContentChanged: function (event) {
+    console.log("Event type (DRAWABLES_ADDED or DRAWABLES_REMOVED)", event.type);
+    console.log("Added drawables:", event.addedDrawables);
+    console.log("Removed drawables:", event.removedDrawables);
   },
 
   // boolean
@@ -572,6 +579,15 @@ new MouseHandler(document.getElementById("mycanvas"))
 - [Rick Moore for the useful javascript-synthesizer howto](https://medium.com/geekculture/building-a-modular-synth-with-web-audio-api-and-javascript-d38ccdeca9ea)
 - [marked Markdown compiler](https://marked.js.org/) by Christopher Jeffrey.
 - [Interactive Visualization of Molecular Surface Dynamics](https://www.computer.org/csdl/journal/tg/2009/06/ttg2009061391/13rRUwInvsI) for the illustration image which inspired the metaballs demo.
+- Darel Rex Finley for the Polygon Inset Calculation article [Inset A Polygon By A Fixed, Perpendicular Distance, With C Code Sample](https://alienryderflex.com/polygon_inset/ "Inset A Polygon By A Fixed, Perpendicular Distance, With C Code Sample")
+- Fernando Cacciola for [A Survey of Polygon Offseting Strategies](http://fcacciola.50webs.com/Offseting%20Methods.htm "A Survey of Polygon Offseting Strategies")
+- Stephen Schmitt for solvin cubic Beziér intersections with line segments http://mysite.verizon.net/res148h4j/javascript/script_exact_cubic.html
+- And _Particle in Cell Consulting LLC_ for refactoring Stephen Schmitt's solution: [Computing Intersections Between a Cubic Bezier Curve and a Line](https://www.particleincell.com/2013/cubic-line-intersection/)
+- Richard "RM" for the hints of how to calculate the bounding box of cubic Bézuer curves: [Bezier Area](https://jsfiddle.net/SalixAlba/QQnvm/4/)
+- [Cuixiping](https://stackoverflow.com/users/988089/cuixiping) for the helpful insights on cubic Bézier bounds at [Stackoverflow](https://stackoverflow.com/questions/24809978/calculating-the-bounding-box-of-cubic-bezier-curve)
+- Thanks to Ana Tudor for the Multi-Range-Slider tutorial: https://css-tricks.com/multi-thumb-sliders-particular-two-thumb-case/
+- Thanks to Dean Taylor for the css linear gradient parser howto: https://stackoverflow.com/questions/20215440/parse-css-gradient-rule-with-javascript-regex
+- Thanks to Stefan Gustavson (stegu@itn.liu.se) for the Perlin noise on example C code (https://github.com/MethanePowered/PerlinNoise). And for Peter Eastman (peastman@drizzle.stanford.edu) for Perlin noise optimizations.
 
 ## Todos
 
